@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story</title>
+    <style>
+        .stories {
+            display: flex;
+            gap: 5px;
+        }
+
+        .item {
+            width: 200px;
+            height: 250px;
+            border-radius: 5px;
+            overflow: hidden; /* phần thừa sẽ ẩn đi*/
+            position: relative; /* định vị tĩnh , với thuộc tính relative ( tương đối) cho phần tử item
+            , vị trí item sẽ được thay dổi dựa trên vị các cạnh */
+        }
+
+        .back {
+            width: 200px;
+            height: 250px;
+        }
+
+        .back img {
+            width: 100%;
+        }
+
+        .avt {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute; /* định vị tĩnh , với thuộc tính absolute ( tuyệt đối) cho phần tử avt,
+            vị trí avt thay đổi dựa trên vị trí phần tử cha của nó */
+            top: 10px;
+            left: 10px;
+            border: 4px solid blue;
+        }
+
+        .avt img {
+            width: 100%;
+        }
+        .name h4 {
+            border: 4px solid blue;
+            width: 60px;
+            height: 10px;
+            color: white;
+            position: absolute;
+            top: 150px;
+            left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="stories">
+    <div class="item">
+        <div class="back">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMiH44q3RTqYPrcKum8AFZK5q-pEqFqUw64A&s"
+                 alt="">
+        </div>
+        <div class="avt">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5K8ZocvyLoh5sW4uVoHS-U2yWFcQL9BfO6A&s"
+                 alt="">
+        </div>
+        <div class="name">
+            <h4>Sơn Tùng MTP</h4>
+        </div>
+    </div>
+    <div class="item">
+        <div class="back">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMiH44q3RTqYPrcKum8AFZK5q-pEqFqUw64A&s"
+                 alt="">
+        </div>
+        <div class="avt">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5K8ZocvyLoh5sW4uVoHS-U2yWFcQL9BfO6A&s"
+                 alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
